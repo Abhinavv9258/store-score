@@ -1,0 +1,91 @@
+.index-card-deck {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.index-cards {
+    border: 2px solid #dddddd;
+    background: transparent;
+    margin: 10px;
+}
+
+.index-card-media {
+    border-bottom: 2px solid #dddddd;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.index-btn {
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px !important;
+    color: black !important;
+    background: #EFF5FB !important;
+    border: 2px solid #dddddd !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.index-btn:hover {
+    transition: all ease 0.3s;
+    color: #f76363 !important;
+}
+
+.index-btn:active {
+    color: #f76363 !important;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms !important;
+}
+
+/*----------Responsive--------*/
+@media (min-width: 780px) and (max-width:1120px) {
+    .index-card-deck {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:780px) {
+    .index-card-deck {
+        margin: 20px;
+        height: auto;
+    }
+
+    .index-text strong {
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0px 10px;
+    }
+
+    .index-text p {
+        font-size: 1rem;
+    }
+
+    .index-btn {
+        height: 44px;
+        margin: 30px;
+    }
+
+    .index-card {
+        margin: 20px !important;
+    }
+
+    .index-card-deck {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
